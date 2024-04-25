@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="navLeft">
+                <div id="navLeftImg"></div>
+                <h1>Sudokuland</h1>
+            </div>
+            <div id="navMid">
+                <div class="navMidDiv">
+                    <h1>Home</h1>
+                </div>
+                <!-- <div class="navMidDiv">
+                    <h1>Comunity</h1>
+                </div> -->
+                <div class="navMidDiv">
+                    <h1>Challenges</h1>
+                </div>
+                <div class="navMidDiv">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+            <div id="navRight">
+                <h1><i class="ri-menu-3-line"></i></h1>
+            </div>
+        </div>
+        <div id="page1">
+            <div id="page1Left">
+                <h1>Play Sudoku</h1>
+                <p>Come here and play the best online SUDOKU GAME like a professional player.</p>
+                <div id="page1LeftCircle"></div>
+                <div id="page1LeftAtom">
+                    <div class="container1">
+                        <div id="nucleus1"></div>
+                        <div id="o-1"></div>
+                        <div id="o-2"></div>
+                        <div id="o-3"></div>
+                    </div>
+                </div>
+                <div id="page1LeftLast">
+                    <label class="container">Hard
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">Medium
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">Easy
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <button onclick="start()"><i class="fa-solid fa-play"></i> Play </button>
+                </div>
+            </div>
+            <div id="page1Right">
+                <div id="page1RightIn"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function start() {
+            window.open("index1.html");
+        }
+    </script>
+</body>
+</html>

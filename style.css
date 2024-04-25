@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: gilroy;
+    src: url(fonts/Gilroy-Bold.otf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(fonts/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: gilroy;
+    src: url(fonts/Gilroy-Regular.otf);
+}
+
+
+html,body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: gilroy;
+    
+}
+#nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    justify-content: space-between;
+    padding: 3vw;
+    font-size: 0.7vw;
+    position: fixed;
+    z-index: 9;
+    font-family:gilroy ;
+}
+#nav h1{
+    font-weight: 300;
+    font-family: gilroy;
+}
+#navLeft{
+    display: flex;
+}
+#navLeftImg{
+    height: 2vw;
+    width: 2vw;
+    background-color: aliceblue;
+    margin-right: 0.5vw;
+    background-image: url("https://cdn.dribbble.com/users/1405795/screenshots/4933784/media/c58da3142df1af56b7e2235fa0b25c7d.jpg?compress=1&resize=400x300");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+#navMid{
+    display: flex;
+
+}
+.navMidDiv{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.navMidDiv h1{
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+.navMidDiv h1:hover{
+    color: #45c6f7;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#page1Right{
+    width: 35vw;
+    height: 80vh;
+    position: absolute; 
+    top: 15vh;
+    right: 3vw;
+    background-image:url(images/sudokuImg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    overflow: hidden;
+}
+#page1Left{
+    border-top: 1px solid transparent;
+    width: 60vw;
+    height: 100vh;
+    background-color: rgb(5, 11, 16);
+    color: white;
+    padding-left: 3vw;
+    overflow:hidden ;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/buickRounded.ttf);
+  }
+@font-face {
+    font-family: mySecondFont;
+    src: url(fonts/Matric8.ttf);
+}
+#page1Left h1{
+    margin-top: 12vw;
+    
+    font-size: 7.5vw;
+    font-family:mySecondFont ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#page1Left p{
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: gilroy;
+}
+#page1LeftAtom{
+    height: 40vh;
+    width: 25vw;
+    /* border: 1px solid white; */
+    margin-top: 1.5vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.container1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nucleus1{
+    position: absolute;
+   width: 30px;
+   height: 30px;
+   background: radial-gradient(#0015FF,#202777);
+   border-radius: 50%;
+   box-shadow: 0 0 3px 2px #000A78;
+}
+#o-1, #o-2,#o-3{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    border: 5px solid #FFFFFFFF;
+    border-radius: 50%;
+}
+#o-1:after, #o-2:after, #o-3:after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 70px;
+    background: #FF1E00;
+    border-radius: 50%;
+}
+#o-1{
+    animation: rotate1 5s linear infinite;
+}
+#o-2{
+    animation: rotate2 5s linear infinite;
+}
+#o-3{
+    animation: rotate3 5s linear infinite;
+}
+@keyframes rotate1{
+    from{
+        transform: rotateX(0deg) rotateY(75deg) rotateZ(180deg);
+    }
+    to{
+        transform: rotateX(0deg) rotateY(75deg) rotateZ(540deg);
+    }
+
+}
+@keyframes rotate2{
+    from{
+        transform: rotateX(106deg) rotateY(154deg) rotateZ(-80deg);
+    }
+    to{
+        transform: rotateX(106deg) rotateY(154deg) rotateZ(280deg);
+    }
+
+}
+@keyframes rotate3{
+    from{
+        transform: rotateX(-106deg) rotateY(149deg) rotateZ(130deg);
+    }
+    to{
+        transform: rotateX(-106deg) rotateY(149deg) rotateZ(490deg);
+    }
+
+}
+#page1LeftLast{
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 60%;
+    left: 35vw;
+}
+/* The container */
+.container {
+    width: 15vw;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 1vw;
+    margin: 1vw;
+    cursor: pointer;
+    font-size: 22px;
+    border-bottom:2px solid white;
+  }
+  .container:hover{
+    color: rgb(199, 198, 198);
+  } 
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(158, 158, 158);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #45c6f7;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+#page1LeftLast button{
+    background:rgba(0, 0, 0, 0);
+    color: rgb(181, 250, 78);
+    border: none;
+    width: 15vw;
+    display: block;
+    position: relative;
+    margin-top: 1vw;
+    cursor: pointer;
+    font-size: 22px;
+}
+#page1LeftLast button:hover{
+    color: rgb(103, 164, 12);
+}
